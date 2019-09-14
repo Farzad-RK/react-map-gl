@@ -355,6 +355,7 @@ export default class Mapbox {
 
     // Creation only props
     this.mapboxgl.accessToken = props.mapboxApiAccessToken || defaultProps.mapboxApiAccessToken;
+    this.mapboxgl.setRTLTextPlugin('https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js');
     this.mapboxgl.baseApiUrl = props.mapboxApiUrl;
 
     this._create(props);
